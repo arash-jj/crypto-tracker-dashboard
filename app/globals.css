@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: HelveticaNeue;
+  src: url('../public/fonts/HelveticaNeueLight.otf');
+}
+
+@theme {
+  --color-text: #6F6C99;
+}
+
+body, html {
+  width: 100%;
+  background: #201D47;
+  background: radial-gradient(circle, rgba(32, 29, 71, 1) 100%, rgba(23, 21, 58, 1) 100%);
+  color: #6F6C99;
+}
+
+@layer components {
+  .test {
+    @apply bg-red-300
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: HelveticaNeue;
+}
+
