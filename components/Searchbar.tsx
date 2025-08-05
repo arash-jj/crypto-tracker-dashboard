@@ -16,7 +16,7 @@ const Searchbar = () => {
             name="search" 
             id="search" 
             autoComplete='false'
-            className={`w-[180px] mr-6 rounded-full border outline-0 p-1 transition-all ease-in-out duration-500 origin-right  ${isSearchActive ? 'scale-x-100' : 'scale-0'}`}/>
+            className={`w-[180px] mr-6 rounded-full text-white border outline-0 p-1 transition-all ease-in-out duration-500 origin-right  ${isSearchActive ? 'scale-x-100' : 'scale-0'}`}/>
         </div>
     )
     }
