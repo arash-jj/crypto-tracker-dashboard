@@ -18,3 +18,7 @@ export interface Coin {
     image: string;
     current_price: number;
 }
+export interface Preferences {
+    currency: string;
+    trackingLines: number[];
+}
