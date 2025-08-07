@@ -1,6 +1,8 @@
 import { Preferences } from "@/type/type";
 import { useEffect, useState } from "react";
 
+// note : tracking lines are temporary
+
 export default function usePreferences() {
     const [prefs, setPrefs] = useState<Preferences>(()=>{
         if (typeof window !== 'undefined'){

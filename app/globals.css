@@ -8,6 +8,8 @@
 @theme {
   --color-text: #6F6C99;
   --color-lightBLue: #53B9EA;
+  --color-lightGray: #B1AFCD;
+  --color-stroke: #312F62;
 }
 
 body, html {
@@ -32,6 +34,10 @@ body, html {
 @utility purple-gradient {
   background: #FF409A;
   background: linear-gradient(90deg, rgba(255, 64, 154, 1) 0%, rgba(196, 56, 239, 1) 100%);
+}
+@utility blue-gradient {
+  background: #40DDFF;
+  background: linear-gradient(90deg, #40DDFF 0%, #14BAE3 19%, #13B1E6 69%, #11AADF 82%, #0B98C5 100%)
 }
 
 @layer components {

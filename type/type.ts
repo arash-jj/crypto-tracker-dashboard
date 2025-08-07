@@ -22,3 +22,10 @@ export interface Preferences {
     currency: string;
     trackingLines: number[];
 }
+export interface MiniCryptoChartProps {
+    coinId: string;
+    days?: number;
+    lineColor?: string;
+    height?: number;
+    width?: number;
+}
