@@ -19,6 +19,24 @@ body, html {
   color: #6F6C99;
 }
 
+.minimal-scroll::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+.minimal-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+.minimal-scroll::-webkit-scrollbar-thumb {
+  background: #312F62;
+  border-radius: 3px;
+}
+.minimal-scroll::-webkit-scrollbar-thumb:hover {
+  background: #252346;
+}
+.minimal-scroll::-webkit-scrollbar-button {
+  display: none;
+}
+
 @utility sidebar-gradient {
   background: #262250;
   background: linear-gradient(0deg, rgba(38, 34, 80, 1) 0%, rgba(27, 25, 66, 1) 57%, rgba(23, 22, 59, 1) 100%);

@@ -93,7 +93,7 @@ const MiniCryptoChart = ({
     if (error) {
         return (
         <div 
-            className="flex items-center justify-center bg-red-50 rounded"
+            className="flex items-center justify-center bg-transparent rounded"
             style={{ width, height }}
             title={error}
         >
