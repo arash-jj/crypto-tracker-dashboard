@@ -29,3 +29,36 @@ export interface MiniCryptoChartProps {
     height?: number;
     width?: number;
 }
+export interface CurrencyConfig {
+    id: string;
+    label: string;
+    color: string;
+    gradient?: [string, string];
+    pointStyle?: 'circle' | 'rect' | 'triangle' | 'cross';
+    lineWidth?: number;
+    tension?: number;
+    fill?: boolean;
+}
+
+export interface ChartCustomization {
+    title?: string;
+    titleColor?: string;
+    backgroundColor?: string;
+    gridColor?: string;
+    textColor?: string;
+    borderColor?: string;
+    showLegend?: boolean;
+    legendPosition?: 'top' | 'bottom' | 'left' | 'right';
+    showTooltip?: boolean;
+    timeFormat?: 'auto' | 'hourly' | 'daily' | 'monthly';
+    aspectRatio?: number;
+    showPercentageChange?: boolean;
+}
+
+export interface MultiCurrencyChartProps {
+    currencies: CurrencyConfig[];
+    days?: number;
+    customization?: ChartCustomization;
+    width?: number | string;
+    height?: number | string;
+}

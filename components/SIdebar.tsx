@@ -12,7 +12,7 @@ import TrackingBall from './TrackingBall'
 const Sidebar = () => {
     const pathname = usePathname()
     return (
-        <div className='sidebar-gradient h-dvh w-[300px] p-5'>
+        <div className='sidebar-gradient min-h-dvh w-[300px] p-5'>
             <div className="flex flex-col gap-20">
                 <Link href="/">
                     <Image src="/Logo.svg" alt="logo" width={120} height={20}/>

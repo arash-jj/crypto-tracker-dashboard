@@ -11,7 +11,7 @@ import {
 } from 'chart.js';
 import { Line } from 'react-chartjs-2';
 import { MiniCryptoChartProps } from '@/type/type';
-import { ArrowDownLeft, ArrowUpRight } from 'lucide-react';
+import { ArrowDownLeft, ArrowUpRight, TriangleAlert } from 'lucide-react';
 
 ChartJS.register(CategoryScale, LinearScale, PointElement, LineElement, Filler);
 
@@ -97,7 +97,7 @@ const MiniCryptoChart = ({
             style={{ width, height }}
             title={error}
         >
-            <span className="text-red-500 text-xs">⚠️</span>
+            <TriangleAlert color='red'/>
         </div>
         );
     }
